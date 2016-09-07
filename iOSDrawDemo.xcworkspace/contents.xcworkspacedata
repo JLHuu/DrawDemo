@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ScreenCat/ScreenCat.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:&#x56fe;&#x7247;&#x5904;&#x7406;/DrawDemo.xcodeproj">
    </FileRef>
    <FileRef
