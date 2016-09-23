@@ -10,4 +10,7 @@
    <FileRef
       location = "group:&#x4e66;&#x5199;&#x6587;&#x5b57;/&#x4e66;&#x5199;&#x6587;&#x5b57;.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:CustomProgress/CustomProgress.xcodeproj">
+   </FileRef>
 </Workspace>
