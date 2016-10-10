@@ -13,4 +13,7 @@
    <FileRef
       location = "group:CustomProgress/CustomProgress.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:GradualChangeColor/GradualChangeColor.xcodeproj">
+   </FileRef>
 </Workspace>
