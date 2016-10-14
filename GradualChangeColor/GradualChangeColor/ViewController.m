@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import <QuartzCore/QuartzCore.h>
 #import "GraduateView.h"
+
 @interface ViewController ()
 @property(nonatomic,strong)UIView *colorBackgroundView;
 @end
@@ -17,22 +17,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    self.colorBackgroundView = [[UIView alloc] init];
-    self.colorBackgroundView.frame = CGRectMake(20, 70, CGRectGetWidth(self.view.frame)-2*20, 50);
-    
-    [self.view addSubview:self.colorBackgroundView];
-    CAGradientLayer *gradientLayer = [[CAGradientLayer alloc] init];
-    gradientLayer.colors = @[(__bridge id)[UIColor redColor].CGColor,(__bridge id)[UIColor blueColor].CGColor,(__bridge id)[UIColor yellowColor].CGColor];
-    gradientLayer.locations = @[@(0.7),@(0.9)];
-    gradientLayer.startPoint = CGPointMake(0, 1);
-    
-    gradientLayer.endPoint = CGPointMake(1, 0);
-    
-    gradientLayer.frame = CGRectMake(0, 0, CGRectGetWidth(self.colorBackgroundView.frame), CGRectGetHeight(self.colorBackgroundView.frame));
-    
-    [self.colorBackgroundView.layer addSublayer:gradientLayer];
-    
+    GraduateView *g_view = [[GraduateView alloc] initWithFrame:CGRectMake(100, 100, 200, 200)];
+    g_view.center = self.view.center;
+    g_view.layer.masksToBounds = YES;
+    g_view.layer.cornerRadius = 100;
+    [g_view setGraduatetype:GraduateTypeLefttopToRightbottom];
+    [g_view addgraduatecolor:[[Graduatecolor alloc] initWithColor:[UIColor redColor] Location:0]];
+    [g_view addgraduatecolor:[[Graduatecolor alloc] initWithColor:[UIColor yellowColor] Location:0]];
+    [g_view addgraduatecolor:[[Graduatecolor alloc] initWithColor:[UIColor greenColor] Location:0]];
+    [g_view addgraduatecolor:[[Graduatecolor alloc] initWithColor:[UIColor blueColor] Location:0]];
+    [g_view addgraduatecolor:[[Graduatecolor alloc] initWithColor:[UIColor purpleColor] Location:0]];
+    [self.view addSubview:g_view];
 }
 
 
