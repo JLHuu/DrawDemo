@@ -16,4 +16,7 @@
    <FileRef
       location = "group:GradualChangeColor/GradualChangeColor.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:CustomControl/CustomControl.xcodeproj">
+   </FileRef>
 </Workspace>
