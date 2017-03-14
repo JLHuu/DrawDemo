@@ -4,15 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>GradualChangeColor.xcscheme</key>
+		<key>DrawChart.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>7</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6D1E2BF51DAB8CEA00C5E0E6</key>
+		<key>6D514CB21E7803240031B168</key>
 		<dict>
 			<key>primary</key>
 			<true/>
