@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D2133991E79282100A9FB2B /* ChartLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2133981E79282100A9FB2B /* ChartLayer.m */; };
+		6D21339C1E7929AC00A9FB2B /* AnmiationChartview.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D21339B1E7929AC00A9FB2B /* AnmiationChartview.m */; };
 		6D514CB81E7803240031B168 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D514CB71E7803240031B168 /* main.m */; };
 		6D514CBB1E7803240031B168 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D514CBA1E7803240031B168 /* AppDelegate.m */; };
 		6D514CBE1E7803240031B168 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D514CBD1E7803240031B168 /* ViewController.m */; };
@@ -17,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D2133971E79282100A9FB2B /* ChartLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartLayer.h; sourceTree = "<group>"; };
+		6D2133981E79282100A9FB2B /* ChartLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartLayer.m; sourceTree = "<group>"; };
+		6D21339A1E7929AC00A9FB2B /* AnmiationChartview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnmiationChartview.h; sourceTree = "<group>"; };
+		6D21339B1E7929AC00A9FB2B /* AnmiationChartview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnmiationChartview.m; sourceTree = "<group>"; };
 		6D514CB31E7803240031B168 /* DrawChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D514CB71E7803240031B168 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6D514CB91E7803240031B168 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,6 +71,10 @@
 				6D514CBA1E7803240031B168 /* AppDelegate.m */,
 				6D514CBC1E7803240031B168 /* ViewController.h */,
 				6D514CBD1E7803240031B168 /* ViewController.m */,
+				6D2133971E79282100A9FB2B /* ChartLayer.h */,
+				6D2133981E79282100A9FB2B /* ChartLayer.m */,
+				6D21339A1E7929AC00A9FB2B /* AnmiationChartview.h */,
+				6D21339B1E7929AC00A9FB2B /* AnmiationChartview.m */,
 				6D514CCD1E78033C0031B168 /* ChartView.h */,
 				6D514CCE1E78033C0031B168 /* ChartView.m */,
 				6D514CBF1E7803240031B168 /* Main.storyboard */,
@@ -159,6 +169,8 @@
 				6D514CBB1E7803240031B168 /* AppDelegate.m in Sources */,
 				6D514CB81E7803240031B168 /* main.m in Sources */,
 				6D514CCF1E78033C0031B168 /* ChartView.m in Sources */,
+				6D21339C1E7929AC00A9FB2B /* AnmiationChartview.m in Sources */,
+				6D2133991E79282100A9FB2B /* ChartLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +325,7 @@
 				6D514CCC1E7803240031B168 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
