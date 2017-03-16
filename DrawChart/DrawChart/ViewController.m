@@ -28,7 +28,7 @@
     self.anv.center = self.view.center;
     [self.view addSubview:self.anv];
     [self.anv setBackgroundColor:[UIColor lightGrayColor]];
-    [self nextChart];
+//    [self nextChart];
     
 }
 - (void)nextChart

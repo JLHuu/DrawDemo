@@ -45,4 +45,5 @@
     self.path = path;
     CGPathRelease(path);
 }
+
 @end
