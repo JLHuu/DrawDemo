@@ -28,11 +28,13 @@
 //    [self.view addSubview:imv];
     Myview *myview = [[Myview alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:myview];
+    myview.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(0, 0, 100, 40);
     btn.center = CGPointMake(CGRectGetWidth(self.view.bounds)/2, CGRectGetMaxY(self.view.frame)-60);
     btn.backgroundColor = [UIColor cyanColor];
     [btn setTitle:@"清空" forState:UIControlStateNormal];
+    btn.autoresizingMask = UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
     [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [btn addTarget:myview action:@selector(Clearpath) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];

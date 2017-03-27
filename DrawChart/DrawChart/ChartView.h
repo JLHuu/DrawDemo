@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+
 @interface ChartPoint : NSObject
 @property (nonatomic,readonly)CGPoint point;
 - (instancetype)initWithpoint:(CGPoint)point;

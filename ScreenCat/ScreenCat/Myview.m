@@ -30,11 +30,12 @@
         
         layer = CGLayerCreateWithContext(context, self.frame.size, NULL);
         CGContextRef layerContext = CGLayerGetContext(layer);
-        brushWidth = 5.0;
+        brushWidth = 2;
         CGContextSetLineWidth(layerContext, brushWidth);
         CGContextSetLineCap(layerContext, kCGLineCapRound);
         brushColor = 0.0;
-        CGContextSetRGBStrokeColor(layerContext, brushColor, brushColor, brushColor, 1);
+//        CGContextSetRGBStrokeColor(layerContext, brushColor, brushColor, brushColor, 1);
+        CGContextSetStrokeColorWithColor(layerContext, [UIColor greenColor].CGColor);
     }
     return self;
 }
@@ -42,9 +43,9 @@
 - (void)drawRect:(CGRect)rect
 {
     CGContextRef currentContext = UIGraphicsGetCurrentContext();
-    CGImageRef imageRef = CGBitmapContextCreateImage(context);
-    CGContextDrawImage(currentContext, [self bounds], imageRef);
-    CGImageRelease(imageRef);
+//    CGImageRef imageRef = CGBitmapContextCreateImage(context);
+//    CGContextDrawImage(currentContext, [self bounds], imageRef);
+//    CGImageRelease(imageRef);
     CGContextDrawLayerInRect(currentContext, [self bounds], layer);
 }
 
@@ -81,11 +82,12 @@
     CGLayerRelease(layer);
     layer = CGLayerCreateWithContext(context, self.frame.size, NULL);
     CGContextRef layerContext = CGLayerGetContext(layer);
-    brushWidth = 5.0;
+    brushWidth = 2.0;
     CGContextSetLineWidth(layerContext, brushWidth);
     CGContextSetLineCap(layerContext, kCGLineCapRound);
     brushColor = 0.0;
-    CGContextSetRGBStrokeColor(layerContext, brushColor, brushColor, brushColor, 1);
+//    CGContextSetRGBStrokeColor(layerContext, brushColor, brushColor, brushColor, 1);
+    CGContextSetStrokeColorWithColor(layerContext, [UIColor greenColor].CGColor);
     CGContextDrawLayerInRect(context, [self bounds], layer);
     CGContextClearRect(context, [self bounds]);
     [self setNeedsDisplay];
